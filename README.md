@@ -13,24 +13,61 @@ ChatBridge is a notebook-based system designed for document analysis and convers
 
 ---
 
+## Functionality Overview
+
+### Key Functions
+
+- **`load_document`**:
+  - Loads and processes a PDF or text document.
+  - Handles errors like unsupported formats or password-protected PDFs.
+
+- **`create_vectorstore`**:
+  - Embeds the document content using OpenAI embeddings.
+  - Stores embeddings in a FAISS vector store for efficient querying.
+
+- **`upload_and_process`**:
+  - Handles document uploads and initializes the QA chain.
+
+- **`chat_with_document`**:
+  - Processes user queries by interacting with the document's content.
+
+### Gradio UI
+
+- Provides a user-friendly interface for:
+  - Uploading documents.
+  - Analyzing and querying document content interactively.
+
+---
+
+## Error Handling
+
+- **No Document Uploaded**:
+  - The app gracefully informs users if no file is provided during analysis.
+  
+- **Unsupported File Formats**:
+  - Displays a clear message when the file format is unsupported.
+
+- **Password-Protected PDFs**:
+  - Alerts users about password-protection issues and skips processing.
+
+---
+
 ## Usage
 
-1. Open the `.ipynb` notebook file in Jupyter Notebook or any compatible IDE like JupyterLab.
-2. Run all the cells sequentially to initialize the app.
+1. Open the `.ipynb` notebook file in Jupyter Notebook or a compatible IDE.
+2. Run all cells to initialize the app.
 3. Use the Gradio interface to:
-   - Upload a file.
-   - Analyze the document.
-   - Ask questions about the document content.
+   - Drag and drop files for analysis.
+   - Ask questions and receive responses based on the document content.
 
 ---
 
 ## Deployment
 
-This notebook is designed for experimentation and development purposes. To deploy the solution:
+This notebook is designed for experimentation and development. To deploy the solution:
 
-1. Extract relevant functions and code into a `.py` script or module.
-2. Set up the Gradio app in a production environment.
-3. Host the application on platforms like:
+1. Refactor relevant code into a `.py` script or module.
+2. Deploy the Gradio app on platforms like:
    - **Streamlit Cloud**
    - **AWS, GCP, or Azure**
    - **Dockerized containers for scalability**
@@ -40,21 +77,20 @@ This notebook is designed for experimentation and development purposes. To deplo
 ## Notes
 
 - The notebook includes functions for loading documents, creating embeddings, and processing user queries.
-- For persistent deployments, implement long-term storage for the FAISS vector store.
+- For production environments, consider implementing persistent storage for the FAISS vector store.
 
 ---
 
-## Error Handling
+## Screenshot
 
-- **No File Uploaded**: Prompts users to upload a file before proceeding.
-- **Password-Protected PDFs**: Alerts users and skips unsupported files.
-- **Unsupported Formats**: Handles and informs users of unsupported file types.
+![Screenshot of ChatBridge Interface](![image](https://github.com/user-attachments/assets/500f2502-0b19-4420-b1fb-39691c24490b)
+)
 
 ---
 
 ## Customization
 
-Feel free to customize the notebook for your use case, whether it's extending functionality or adapting the UI.
+Feel free to modify the notebook for your specific use case, such as extending functionality or customizing the interface.
 
 ---
 
