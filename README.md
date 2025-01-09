@@ -85,7 +85,8 @@ This notebook is designed for experimentation and development. To deploy the sol
 
 ![Screenshot of ChatBridge Interface](![ChatBridge](https://github.com/user-attachments/assets/0ea7dc3c-b55b-46bb-82ac-5a1d15675fc4)
 )
-)
+![ChatBridge](https://github.com/user-attachments/assets/96e2e373-1336-4303-9c05-7dfb3e56ed55)
+
 
 ---
 
