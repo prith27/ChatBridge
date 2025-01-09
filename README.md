@@ -51,6 +51,11 @@ ChatBridge is a notebook-based system designed for document analysis and convers
   - Alerts users about password-protection issues and skips processing.
 
 ---
+## Installing Dependencies
+
+Use ``` pip install -r requirements.txt ``` to install all dependencies. 
+
+---
 
 ## Usage
 
